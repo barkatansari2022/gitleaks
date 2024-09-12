@@ -27,3 +27,5 @@ jobs:
 
       - name: Validate Config
         run: go generate ./... && git diff --exit-code
+        push: true
+        tags: baraktullah/github-action-docker-image-build:latest55
